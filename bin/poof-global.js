@@ -6,8 +6,23 @@
 /* jshint esversion:6 */
 /* eslint-env es6 */
 
-const a_paths = process.argv.slice(2);
+const argv = require('minimist')(process.argv.slice(2));
+const a_paths =  argv._;
 const poof = require('../lib/poof');
 
-// Displays the text in the console
-poof( a_paths );
+function main(){
+   if( argv.help || a_paths.length < 1 ){
+      return show_help();
+   }
+
+   // Makes the file and direcories.
+   poof( a_paths );
+
+}// /main()
+
+function show_help() {
+   console.log( `Usage: poof [OPTION]... DIRECTORY/FILE...
+   Create the DIRECTORY(ies), if they do not already exist.
+   Update the access and modification times of each FILE to the current time.
+   ` );
+}// /show_help()
