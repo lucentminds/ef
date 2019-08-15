@@ -1,0 +1,26 @@
+{
+   "name": "poof",
+   "version": "1.0.0",
+   "description": "Command line utility to merge the functionality of \"mkdir -p\" and \"touch\".",
+   "main": "./lib/poof.js",
+   "bin": {
+      "poof": "./bin/poof-global.js"
+   },
+   "directories": {
+      "lib": "lib"
+   },
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lucentminds/poof.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/lucentminds/poof/issues"
+   },
+   "homepage": "https://github.com/lucentminds/poof#readme"
+}
