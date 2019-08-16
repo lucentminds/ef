@@ -24,6 +24,10 @@
    },
    "homepage": "https://github.com/lucentminds/poof#readme",
    "dependencies": {
+      "fs-extra": "^8.1.0",
       "minimist": "^1.2.0"
+   },
+   "devDependencies": {
+      "jshint": "^2.10.2"
    }
 }
