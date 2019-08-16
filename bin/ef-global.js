@@ -8,7 +8,7 @@
 
 const argv = require('minimist')(process.argv.slice(2));
 const a_paths =  argv._;
-const poof = require('../lib/poof');
+const ef = require('../lib/ef');
 
 main();
 
@@ -18,13 +18,14 @@ function main(){
    }
 
    // Makes the file and direcories.
-   poof( a_paths );
+   ef( a_paths );
 
 }// /main()
 
 function show_help() {
-   console.log( `Usage: poof [OPTION]... DIRECTORY/FILE...
-   Create the DIRECTORY(ies), if they do not already exist.
-   Update the access and modification times of each FILE to the current time.
+   console.log( `Usage: ef [OPTION]... /DIRECTORY/DIRECTORY/FILE...
+   Ensures that the file exists. If the file that is requested to be created is 
+   in directories that do not exist, these directories are created. If the file 
+   already exists, it is NOT MODIFIED.
    ` );
 }// /show_help()

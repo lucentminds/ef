@@ -1,10 +1,10 @@
 {
-   "name": "poof",
+   "name": "ef",
    "version": "1.0.0",
    "description": "Command line utility to merge the functionality of \"mkdir -p\" and \"touch\".",
-   "main": "./lib/poof.js",
+   "main": "./lib/ef.js",
    "bin": {
-      "poof": "./bin/poof-global.js"
+      "ef": "./bin/ef-global.js"
    },
    "directories": {
       "lib": "lib"
@@ -14,15 +14,15 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/lucentminds/poof.git"
+      "url": "git+https://github.com/lucentminds/ef.git"
    },
    "keywords": [],
    "author": "",
    "license": "MIT",
    "bugs": {
-      "url": "https://github.com/lucentminds/poof/issues"
+      "url": "https://github.com/lucentminds/ef/issues"
    },
-   "homepage": "https://github.com/lucentminds/poof#readme",
+   "homepage": "https://github.com/lucentminds/ef#readme",
    "dependencies": {
       "fs-extra": "^8.1.0",
       "minimist": "^1.2.0"
