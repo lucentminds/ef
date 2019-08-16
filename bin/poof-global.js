@@ -10,6 +10,8 @@ const argv = require('minimist')(process.argv.slice(2));
 const a_paths =  argv._;
 const poof = require('../lib/poof');
 
+main();
+
 function main(){
    if( argv.help || a_paths.length < 1 ){
       return show_help();
