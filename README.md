@@ -12,4 +12,4 @@ You should now have a global terminal command called `poof`.
 ```shell
 poof /project/public/index.html
 ```
-And then \***POOF**\*! The directory path and file are created even if the directory path `/project/public` didn't exist before!.
+And then \***POOF**\*! The directory path and file are created even if the directory path `/project/public` didn't exist before.
