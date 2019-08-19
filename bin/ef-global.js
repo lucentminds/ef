@@ -18,7 +18,10 @@ function main(){
    }
 
    // Makes the file and direcories.
-   ef( a_paths );
+   ef( a_paths )
+   .then(function( c_path ){
+      console.log( c_path );
+   });
 
 }// /main()
 
